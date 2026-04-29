@@ -1,0 +1,128 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+
+  background-image: var(--wallpaper-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+  position: relative;
+  color: white;
+
+  &::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--desktop-overlay, rgba(0, 0, 0, 0.08));
+    pointer-events: none;
+  }
+
+  > *{
+    position: relative;
+  }
+
+}
+
+body{
+  background-color: black;
+}
+
+.desktop.dark{
+  --desktop-overlay: rgba(0, 0, 0, 0.12);
+  --nav-bg: rgba(0, 0, 0, 0.72);
+  --nav-text: white;
+  --dock-bg: rgba(63, 63, 63, 0.42);
+  --window-text: aliceblue;
+}
+
+.desktop.light{
+  --desktop-overlay: rgba(255, 255, 255, 0.12);
+  --nav-bg: rgba(245, 245, 247, 0.72);
+  --nav-text: #141414;
+  --dock-bg: rgba(255, 255, 255, 0.42);
+  --window-text: #161616;
+}
+
+.desktop.window-theme-glass{
+  --window-bg: rgba(14, 14, 18, 0.78);
+  --window-titlebar: rgba(255, 255, 255, 0.06);
+  --window-border: rgba(255, 255, 255, 0.16);
+  --window-active-border: rgba(255, 255, 255, 0.38);
+  --window-shadow: 0 28px 90px rgba(0, 0, 0, 0.48);
+  --window-inactive-shadow: 0 18px 54px rgba(0, 0, 0, 0.34);
+}
+
+.desktop.light.window-theme-glass{
+  --window-bg: rgba(248, 248, 250, 0.86);
+  --window-titlebar: rgba(0, 0, 0, 0.04);
+  --window-border: rgba(0, 0, 0, 0.12);
+  --window-active-border: rgba(0, 0, 0, 0.28);
+}
+
+.desktop.window-theme-solid{
+  --window-bg: #111214;
+  --window-titlebar: #1b1c20;
+  --window-border: rgba(255, 255, 255, 0.1);
+}
+
+.desktop.light.window-theme-solid{
+  --window-bg: #f5f5f7;
+  --window-titlebar: #e7e7eb;
+  --window-border: rgba(0, 0, 0, 0.12);
+}
+
+.desktop.window-theme-graphite{
+  --window-bg: #202328;
+  --window-titlebar: #2b2f36;
+  --window-border: rgba(255, 255, 255, 0.14);
+  --window-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.app-loader{
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--nav-text, white);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+}
+
+.window-error{
+  height: 100%;
+  display: grid;
+  align-content: center;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  color: var(--window-text, white);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  h2{
+    font-size: 1.1rem;
+  }
+
+  p{
+    opacity: 0.72;
+  }
+}
+
+@media (max-width: 768px){
+  main{
+    min-height: 100dvh;
+  }
+}
