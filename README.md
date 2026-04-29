@@ -37,11 +37,11 @@ A fully interactive **MacOS-inspired desktop environment** built with React, fea
 
 ## 📸 Screenshots
 
+<img width="2160" height="1178" alt="home-screen" src="https://github.com/user-attachments/assets/17ed9dd9-4058-404d-b6d3-a6a5b59861df" />
 
-![Uploading Screenshot 2026-04-29 at 5.26.34 PM.png…]()
-![Uploading Screenshot 2026-04-29 at 5.25.02 PM.png…]()
-![Uploading Screenshot 2026-04-29 at 5.22.54 PM.png…]()
+<img width="2160" height="1178" alt="terminal-cli" src="https://github.com/user-attachments/assets/d67dedf6-73bc-4af7-81ef-726d005858ce" />
 
+<img width="2160" height="1178" alt="window-system" src="https://github.com/user-attachments/assets/864a47e4-ba18-498d-b191-75b1d52d5e30" />
 ---
 
 ## 📦 Installation & Setup
