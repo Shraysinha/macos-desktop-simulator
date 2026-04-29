@@ -31,9 +31,7 @@ A fully interactive **MacOS-inspired desktop environment** built with React, fea
 ---
 
 ## 🌐 Live Demo
-
-👉 *Coming Soon*
-*(Deploying on Vercel / Netlify)*
+(https://macos-desktop-simulator.vercel.app/)
 
 ---
 
